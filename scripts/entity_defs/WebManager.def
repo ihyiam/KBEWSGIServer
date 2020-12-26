@@ -1,0 +1,23 @@
+<root>
+	<Volatile>
+		<position/>
+		<yaw/>
+		<pitch> 20 </pitch>
+	</Volatile>
+
+	<Interfaces>
+		<Interface>			GameObject		</Interface>
+	</Interfaces>
+
+	<Properties>
+	</Properties>
+
+	<BaseMethods>
+		<remoteCall>
+			<Arg>		UINT16		</Arg>
+			<Arg>		PYTHON			</Arg>
+		</remoteCall>
+	</BaseMethods>
+
+</root>
+
