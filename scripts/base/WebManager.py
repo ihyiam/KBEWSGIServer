@@ -48,3 +48,9 @@ class WebManager(KBEngine.Entity, GameObject):
     def remoteCall(self, fileno, data):
         if self.waitSend.pop(fileno, None) is not None:
             self.root.server.endwait(fileno, data)
+
+    def onDestroy(self):
+        DEBUG_MSG("WebManager::onDestroy")
+        self.root.webmgr = None
+        self.root.close()
+        self.root = None
